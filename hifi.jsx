@@ -4,10 +4,9 @@
 
 const MAIL = 'ymzz7x.contact@gmail.com';
 const MAIL_SAM = 'samuelsartip623@gmail.com';
-const INSTA = 'https://www.instagram.com/madebytrade/';
-const INSTA_HANDLE = '@madebytrade';
-const MAILTO = (sub) => `mailto:${MAIL}?subject=${encodeURIComponent(sub || 'Projet site web')}`;
-const MAILTO_SAM = (sub) => `mailto:${MAIL_SAM}?subject=${encodeURIComponent(sub || 'Projet site web')}`;
+// Ouvre Gmail dans un nouvel onglet avec sujet pré-rempli — fonctionne même sans client mail installé
+const MAILTO = (sub) => `https://mail.google.com/mail/?view=cm&fs=1&to=${MAIL}&su=${encodeURIComponent(sub || 'Projet site web')}`;
+const MAILTO_SAM = (sub) => `https://mail.google.com/mail/?view=cm&fs=1&to=${MAIL_SAM}&su=${encodeURIComponent(sub || 'Projet site web')}`;
 
 // ── Copy bilingue ──────────────────────────────────────────────────────────
 const T = {
@@ -24,7 +23,7 @@ const T = {
     hero_title_a: 'Des sites web qui font',
     hero_title_em: 'travailler',
     hero_title_b: 'votre entreprise.',
-    hero_lede: 'Nous concevons et développons des sites pour les entreprises locales qui veulent enfin un outil sérieux. Livrés en 1 semaine, à partir de 999\u00a0€.',
+    hero_lede: 'Nous concevons et développons des sites pour les entreprises locales qui veulent enfin un outil sérieux. Livrés en 1 semaine, à partir de 1\u00a0000\u00a0€.',
     cta_primary: 'Démarrer un projet',
     cta_secondary: 'Voir les réalisations',
     available: 'Disponible cette semaine',
@@ -34,7 +33,7 @@ const T = {
     stats_kicker: 'Repères',
     stats: [
       { n: '1 sem.', l: 'Délai de livraison' },
-      { n: '999\u00a0€', l: 'À partir de' },
+      { n: '1\u00a0000\u00a0€', l: 'À partir de' },
       { n: 'Fixe', l: 'Prix annoncé d\u2019avance' },
       { n: '24\u00a0h', l: 'Première réponse' },
     ],
@@ -46,7 +45,7 @@ const T = {
         n: '01', t: 'Site vitrine',
         d: 'Une présence web propre, rapide, qui inspire confiance dès la première seconde. Idéal pour artisans, commerces, professions libérales.',
         bullets: ['Jusqu\u2019à 5 pages', 'Design sur-mesure', 'Optimisé mobile', 'Référencement de base'],
-        price: 'à partir de 999\u00a0€',
+        price: 'à partir de 1\u00a0000\u00a0€',
       },
       {
         n: '02', t: 'Refonte',
@@ -85,7 +84,7 @@ const T = {
     edges: [
       { t: 'Livraison en 1 semaine', d: 'Pas trois mois, pas trois agences successives. Sept jours, prix annoncé d\u2019avance, pas de surprise.' },
       { t: 'Design pensé en 2026', d: 'Pas de templates fatigués. Chaque site est conçu sur-mesure pour votre activité, pas découpé dans un thème WordPress.' },
-      { t: 'Un seul interlocuteur', d: 'YMZ s\u2019occupe du contact, Samuel construit. Pas de chef de projet intermédiaire, pas de sous-traitance lointaine.' },
+      { t: 'Un seul interlocuteur', d: 'Made by trade s\u2019occupe de tout, du contact à la livraison. Pas de chef de projet intermédiaire, pas de sous-traitance lointaine.' },
     ],
 
     testi_kicker: 'Témoignages',
@@ -102,7 +101,7 @@ const T = {
     pricing: [
       {
         t: 'Vitrine',
-        price: '999\u00a0€',
+        price: '1\u00a0000\u00a0€',
         sub: 'TTC, paiement en deux fois',
         for: 'Artisans, commerces, indépendants',
         inc: ['Jusqu\u2019à 5 pages', 'Design sur-mesure', 'Mobile + tablette', 'SEO de base', 'Guide d\u2019utilisation', 'Code livré clé en main'],
@@ -110,7 +109,7 @@ const T = {
       },
       {
         t: 'Pro',
-        price: '1\u00a0799\u00a0€',
+        price: '1\u00a0800\u00a0€',
         sub: 'TTC, paiement en deux fois',
         for: 'PME, professions libérales',
         inc: ['Jusqu\u2019à 12 pages', 'Blog ou portfolio', 'Formulaires avancés', 'Animations soignées', 'SEO local approfondi', 'Guide d\u2019utilisation'],
@@ -120,7 +119,7 @@ const T = {
       {
         t: 'Sur-mesure',
         price: 'sur devis',
-        sub: 'À partir de 2\u00a0499\u00a0€',
+        sub: 'À partir de 2\u00a0500\u00a0€',
         for: 'Réservation, devis, espace client',
         inc: ['Fonctionnalités custom', 'Intégrations API', 'Espace admin', 'Tests de bout en bout', 'Documentation détaillée', 'Code livré clé en main'],
         cta: 'Discuter',
@@ -149,7 +148,7 @@ const T = {
     contact_form_l4: 'Quelques mots sur votre projet',
     contact_form_send: 'Envoyer',
 
-    footer_left: '© 2026 — TRADE',
+    footer_left: '© 2026 — Made by trade',
     footer_right: 'Atelier web indépendant',
     footer_addr: 'Atelier indépendant',
     footer_links: [
@@ -171,7 +170,7 @@ const T = {
     hero_title_a: 'Websites that put your',
     hero_title_em: 'business',
     hero_title_b: 'to work.',
-    hero_lede: 'We design and build websites for local businesses that want a serious tool. Delivered in 1 week, from €999.',
+    hero_lede: 'We design and build websites for local businesses that want a serious tool. Delivered in 1 week, from €1,000.',
     cta_primary: 'Start a project',
     cta_secondary: 'See our work',
     available: 'Available this week',
@@ -181,7 +180,7 @@ const T = {
     stats_kicker: 'At a glance',
     stats: [
       { n: '1 wk', l: 'Delivery time' },
-      { n: '€999', l: 'Starting at' },
+      { n: '€1,000', l: 'Starting at' },
       { n: 'Fixed', l: 'Price upfront' },
       { n: '24 h', l: 'First reply' },
     ],
@@ -217,7 +216,7 @@ const T = {
     edges: [
       { t: 'Delivered in 1 week', d: 'Not three months, not three agencies. Seven days, fixed price upfront, no surprises.' },
       { t: 'Designed in 2026', d: 'No tired templates. Every site is designed for your business, not cut from a WordPress theme.' },
-      { t: 'One single contact', d: 'YMZ handles communication, Samuel builds. No project-manager middleman, no distant outsourcing.' },
+      { t: 'One single contact', d: 'Made by trade handles everything, from first contact to delivery. No project-manager middleman, no distant outsourcing.' },
     ],
 
     testi_kicker: 'Testimonials',
@@ -232,9 +231,9 @@ const T = {
     pricing_title: 'Fixed prices, announced upfront.',
     pricing_sub: 'No endless quoting. Three clear packages, everything included.',
     pricing: [
-      { t: 'Brochure', price: '€999', sub: 'incl. tax, two payments', for: 'Craftsmen, shops, freelancers', inc: ['Up to 5 pages', 'Custom design', 'Mobile + tablet', 'Basic SEO', 'User guide', 'Turnkey delivery'], cta: 'Start' },
-      { t: 'Pro', price: '€1,799', sub: 'incl. tax, two payments', for: 'SMBs, professionals', inc: ['Up to 12 pages', 'Blog or portfolio', 'Advanced forms', 'Polished animations', 'Deep local SEO', 'User guide'], cta: 'Start', featured: true },
-      { t: 'Custom', price: 'on quote', sub: 'From €2,499', for: 'Booking, quotes, client area', inc: ['Custom features', 'API integrations', 'Admin area', 'End-to-end testing', 'Detailed docs', 'Turnkey delivery'], cta: 'Talk' },
+      { t: 'Brochure', price: '€1,000', sub: 'incl. tax, two payments', for: 'Craftsmen, shops, freelancers', inc: ['Up to 5 pages', 'Custom design', 'Mobile + tablet', 'Basic SEO', 'User guide', 'Turnkey delivery'], cta: 'Start' },
+      { t: 'Pro', price: '€1,800', sub: 'incl. tax, two payments', for: 'SMBs, professionals', inc: ['Up to 12 pages', 'Blog or portfolio', 'Advanced forms', 'Polished animations', 'Deep local SEO', 'User guide'], cta: 'Start', featured: true },
+      { t: 'Custom', price: 'on quote', sub: 'From €2,500', for: 'Booking, quotes, client area', inc: ['Custom features', 'API integrations', 'Admin area', 'End-to-end testing', 'Detailed docs', 'Turnkey delivery'], cta: 'Talk' },
     ],
 
     faq_kicker: 'FAQ',
@@ -259,7 +258,7 @@ const T = {
     contact_form_l4: 'A few words about your project',
     contact_form_send: 'Send',
 
-    footer_left: '© 2026 — TRADE',
+    footer_left: '© 2026 — Made by trade',
     footer_right: 'Independent web studio',
     footer_addr: 'Independent studio',
     footer_links: [
@@ -514,22 +513,22 @@ function Nav({ t, lang, setLang }) {
       borderBottom: scrolled ? '1px solid var(--hair)' : '1px solid transparent',
       transition: 'all .25s',
     }}>
-      <div className="wrap" style={{ padding: '20px 56px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24 }}>
+      <div className="wrap nav-row" style={{ padding: '20px 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24 }}>
         <a href="#top" style={{ fontWeight: 600, fontSize: 15, letterSpacing: '-0.01em', display: 'flex', alignItems: 'center', gap: 8 }}>
           <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 8, background: 'var(--ink)' }} />
-          TRADE
+          Made <span style={{ color: 'var(--muted)', fontWeight: 400 }}>by trade</span>
         </a>
-        <div style={{ display: 'flex', gap: 32 }}>
+        <div className="nav-links" style={{ display: 'flex', gap: 32 }}>
           {t.nav.map((n) => (
             <a key={n.href} href={n.href} className="nav-link" style={{ fontSize: 13, color: 'var(--muted)' }}>{n.label}</a>
           ))}
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div className="nav-right" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div className="lang-toggle">
             <button className={lang === 'fr' ? 'on' : ''} onClick={() => setLang('fr')}>FR</button>
             <button className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>
           </div>
-          <a href={MAILTO()} className="btn btn-ghost" style={{ padding: '8px 16px', fontSize: 13 }}>{t.cta_top}</a>
+          <a href={MAILTO()} target="_blank" rel="noopener" className="btn btn-ghost nav-cta" style={{ padding: '8px 16px', fontSize: 13 }}>{t.cta_top}</a>
         </div>
       </div>
     </div>
@@ -549,7 +548,7 @@ function Hero({ t, lang }) {
         <div className="reveal" data-d="2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, marginTop: 56, alignItems: 'end' }}>
           <p style={{ fontSize: 18, lineHeight: 1.5, color: 'var(--muted)', maxWidth: 540, margin: 0 }}>{t.hero_lede}</p>
           <div style={{ display: 'flex', gap: 12, justifySelf: 'end', flexWrap: 'wrap' }}>
-            <a href={MAILTO()} className="btn btn-primary">{t.cta_primary} →</a>
+            <a href={MAILTO()} target="_blank" rel="noopener" className="btn btn-primary">{t.cta_primary} →</a>
             <a href="#work" className="btn btn-ghost">{t.cta_secondary}</a>
           </div>
         </div>
@@ -588,10 +587,10 @@ function Marquee({ t }) {
 
 function Stats({ t }) {
   return (
-    <section style={{ padding: '80px 0', borderBottom: '1px solid var(--hair)', background: 'var(--cream)' }}>
+    <section style={{ padding: '80px 0', borderBottom: '1px solid var(--hair)' }}>
       <div className="wrap">
         <div className="reveal" style={{ marginBottom: 48 }}><Eyebrow>{t.stats_kicker}</Eyebrow></div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 1, background: 'var(--hair)', border: '1px solid var(--hair)' }}>
+        <div className="grid-2-mobile" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 1, background: 'var(--hair)', border: '1px solid var(--hair)' }}>
           {t.stats.map((s, i) => (
             <div key={i} className="reveal" data-d={i} style={{ background: 'var(--paper)', padding: '40px 32px' }}>
               <div className="stat-num">{s.n}</div>
@@ -759,7 +758,7 @@ function Testimonials({ t }) {
 
 function Pricing({ t, lang }) {
   return (
-    <section id="pricing" style={{ background: 'var(--cream)' }}>
+    <section id="pricing">
       <div className="wrap">
         <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 3fr', gap: 56, marginBottom: 16 }}>
           <Eyebrow>{t.pricing_kicker}</Eyebrow>
@@ -794,7 +793,7 @@ function Pricing({ t, lang }) {
                   </li>
                 ))}
               </ul>
-              <a href={MAILTO(p.t + ' · ' + p.price)} className={p.featured ? 'btn' : 'btn'} style={{
+              <a href={MAILTO(p.t + ' · ' + p.price)} target="_blank" rel="noopener" className={p.featured ? 'btn' : 'btn'} style={{
                 background: p.featured ? 'var(--paper)' : 'var(--ink)',
                 color: p.featured ? 'var(--ink)' : 'var(--paper)',
                 justifyContent: 'center',
@@ -842,17 +841,13 @@ function Contact({ t, lang }) {
           <div>
             <p style={{ fontSize: 16, color: 'var(--muted)', lineHeight: 1.6, maxWidth: 460 }}>{t.contact_sub}</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 32 }}>
-              <a href={MAILTO()} className="btn btn-primary">
+              <a href={MAILTO()} target="_blank" rel="noopener" className="btn btn-primary">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M1 3h12v8H1z M1 3l6 5 6-5"/></svg>
                 {MAIL}
               </a>
-              <a href={MAILTO_SAM()} className="btn btn-ghost" style={{ borderColor: 'var(--hair-2)' }}>
+              <a href={MAILTO_SAM()} target="_blank" rel="noopener" className="btn btn-ghost" style={{ borderColor: 'var(--hair-2)' }}>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M1 3h12v8H1z M1 3l6 5 6-5"/></svg>
                 {MAIL_SAM}
-              </a>
-              <a href={INSTA} target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ borderColor: 'var(--hair-2)' }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-                {INSTA_HANDLE}
               </a>
             </div>
             <div style={{ marginTop: 40, paddingTop: 32, borderTop: '1px solid var(--hair)' }}>
@@ -860,7 +855,7 @@ function Contact({ t, lang }) {
               <div style={{ fontSize: 16 }}>{lang === 'fr' ? 'Sous 24\u00a0heures ouvrées · Avec une première proposition concrète' : 'Within 24 business hours · With a first concrete proposal'}</div>
             </div>
           </div>
-          <form onSubmit={(e) => { e.preventDefault(); const f = e.currentTarget; const body = `${f.name.value}\n${f.email.value}\n${f.biz.value}\n\n${f.msg.value}`; window.location.href = `mailto:${MAIL}?subject=${encodeURIComponent('Projet · ' + f.biz.value)}&body=${encodeURIComponent(body)}`; }}
+          <form onSubmit={(e) => { e.preventDefault(); const f = e.currentTarget; const body = `${f.name.value}\n${f.email.value}\n${f.biz.value}\n\n${f.msg.value}`; const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${MAIL}&su=${encodeURIComponent('Projet · ' + f.biz.value)}&body=${encodeURIComponent(body)}`; window.open(url, '_blank'); }}
             style={{ display: 'flex', flexDirection: 'column', gap: 0, border: '1px solid var(--hair)', borderRadius: 4, background: 'var(--paper)' }}>
             {[
               { n: 'name', l: t.contact_form_l1 },
@@ -890,12 +885,12 @@ function Footer({ t, lang }) {
       <div className="wrap">
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: 48, marginBottom: 56 }}>
           <div>
-            <div style={{ fontWeight: 600, fontSize: 17, letterSpacing: '-0.01em', marginBottom: 12 }}>TRADE</div>
+            <div style={{ fontWeight: 600, fontSize: 17, letterSpacing: '-0.01em', marginBottom: 12 }}>Made by trade</div>
             <p style={{ fontSize: 14, color: 'var(--muted)', maxWidth: 360, lineHeight: 1.5 }}>{lang === 'fr' ? 'Atelier web indépendant. Sites livrés en une semaine, pour les entreprises locales.' : 'Independent web studio. Sites delivered in one week, for local businesses.'}</p>
           </div>
           <div>
             <div className="mono" style={{ marginBottom: 16 }}>{lang === 'fr' ? 'Contact' : 'Contact'}</div>
-            <a href={MAILTO()} style={{ fontSize: 14, display: 'block', marginBottom: 6 }}>{MAIL}</a>
+            <a href={MAILTO()} target="_blank" rel="noopener" style={{ fontSize: 14, display: 'block', marginBottom: 6 }}>{MAIL}</a>
             <div style={{ fontSize: 13, color: 'var(--muted)' }}>{t.footer_addr}</div>
           </div>
           <div>
@@ -926,8 +921,8 @@ const LEGAL_COPY = {
     legal: {
       title: 'Mentions légales',
       blocks: [
-        ['Éditeurs du site', 'TRADE — atelier web indépendant. Le site portfolio est édité conjointement par Samuel Sartip et son associé YMZ.'],
-        ['Contact', `Email général : ${MAIL}\nEmail Samuel : ${MAIL_SAM}`],
+        ['Éditeur du site', 'Made by trade — atelier web indépendant.'],
+        ['Contact', `Email général : ${MAIL}\nEmail technique : ${MAIL_SAM}`],
         ['Hébergement', 'Le site est hébergé sur une infrastructure sécurisée. Coordonnées de l’hébergeur communiquées sur demande.'],
         ['Propriété intellectuelle', 'Tous les contenus présents sur ce site (textes, images, code, design) sont la propriété de leurs auteurs respectifs. Toute reproduction sans accord préalable écrit est interdite.'],
         ['Responsabilité', 'Les exemples de réalisations présentés sont à but démonstratif. Les vrais projets clients sont confidentiels et publiés uniquement avec leur accord.'],
@@ -947,7 +942,7 @@ const LEGAL_COPY = {
       title: 'Nous contacter',
       blocks: [
         ['Email principal', `${MAIL}\nPremière réponse sous 24 heures ouvrées avec une proposition concrète.`],
-        ['Email Samuel', `${MAIL_SAM}\nPour les questions techniques ou liées au design.`],
+        ['Email technique', `${MAIL_SAM}\nPour les questions techniques ou liées au design.`],
         ['Délais de réponse', 'Du lundi au vendredi, 9h–19h (heure de Paris). Le week-end, on prend le temps de réfléchir avant de répondre.'],
         ['Format préféré', 'Un email court avec votre activité, ce que vous cherchez, et un délai si vous en avez un. C’est souvent suffisant pour démarrer.'],
       ],
@@ -957,8 +952,8 @@ const LEGAL_COPY = {
     legal: {
       title: 'Legal notice',
       blocks: [
-        ['Site editors', 'TRADE — independent web studio. The portfolio site is jointly edited by Samuel Sartip and his partner YMZ.'],
-        ['Contact', `General email: ${MAIL}\nSamuel’s email: ${MAIL_SAM}`],
+        ['Site editor', 'Made by trade — independent web studio.'],
+        ['Contact', `General email: ${MAIL}\nTechnical email: ${MAIL_SAM}`],
         ['Hosting', 'The site is hosted on secure infrastructure. Hosting provider details available on request.'],
         ['Intellectual property', 'All content on this site (text, images, code, design) is the property of its respective authors. Reproduction without prior written consent is prohibited.'],
         ['Liability', 'Sample work shown is for demonstration purposes. Real client projects are confidential and only published with their consent.'],
@@ -978,7 +973,7 @@ const LEGAL_COPY = {
       title: 'Contact us',
       blocks: [
         ['Main email', `${MAIL}\nFirst reply within 24 business hours with a concrete proposal.`],
-        ['Samuel’s email', `${MAIL_SAM}\nFor technical or design-related questions.`],
+        ['Technical email', `${MAIL_SAM}\nFor technical or design-related questions.`],
         ['Response times', 'Monday to Friday, 9am–7pm (Paris time). On weekends, we take time to think before replying.'],
         ['Preferred format', 'A short email with your business, what you’re looking for, and a deadline if you have one. Usually enough to start.'],
       ],

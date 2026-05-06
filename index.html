@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Samuel & YMZ — Atelier web</title>
+<title>Made by trade — Atelier web</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,16 +14,15 @@
 
 <style>
   :root{
-    --ink:#15110d;
-    --ink-2:#2a2520;
-    --paper:#fbfaf6;
-    --paper-2:#efe7d4;
-    --hair:#e8e3d6;
-    --hair-2:#d4ccba;
-    --muted:#6b6358;
-    --muted-2:#a09683;
-    --accent:#15110d;
-    --cream:#efe7d4;
+    --ink:#0a0a0a;
+    --ink-2:#1a1a1a;
+    --paper:#fafaf7;
+    --paper-2:#f4f2ed;
+    --hair:#e6e3dd;
+    --hair-2:#d6d3cc;
+    --muted:#6b6b66;
+    --muted-2:#9a9a93;
+    --accent:#0a0a0a;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{background:var(--paper);color:var(--ink);font-family:"Inter",sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -121,11 +120,65 @@
   @keyframes fadein{from{opacity:0}to{opacity:1}}
   @keyframes slideup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
-  /* Mobile-ish — pas critique pour la démo, juste basique */
-  @media (max-width:780px){
-    .wrap{padding:0 24px}
-    section{padding:72px 0}
-    .marquee-item{font-size:48px}
+  /* ── RESPONSIVE MOBILE ──────────────────────────────────────────────── */
+  @media (max-width: 900px){
+    .wrap{padding:0 20px;max-width:100%}
+    section{padding:64px 0}
+    section:first-of-type{padding-top:40px}
+
+    /* Nav */
+    .nav-row{padding:14px 0 !important;gap:12px !important}
+    .nav-links{display:none !important}
+    .nav-cta{display:none !important}
+    .nav-row .lang-toggle{font-size:11px}
+
+    /* Hero */
+    h1{font-size:clamp(36px,9vw,52px) !important;line-height:1.05 !important}
+    h2{font-size:clamp(24px,6vw,32px) !important}
+
+    /* Boutons */
+    .btn{padding:12px 18px;font-size:13px}
+
+    /* Marquee plus petit */
+    .marquee-item{font-size:42px}
+    .marquee-item .dot{width:8px;height:8px;margin:0 18px}
+
+    /* Stats — toujours en colonnes mais plus petit */
+    .stat-num{font-size:48px}
+
+    /* TOUTES les grilles passent en 1 colonne sur mobile */
+    div[style*="display: grid"],
+    div[style*="display:grid"]{
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 32px !important;
+    }
+
+    /* Cas spéciaux : grilles qu'on veut garder en 2 colonnes sur mobile */
+    .grid-2-mobile{
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 1px !important;
+    }
+
+    /* Modal */
+    .modal{padding:32px 24px}
+    .modal h3{font-size:22px}
+
+    /* FAQ */
+    .faq summary{padding:20px 0;font-size:15px}
+    .faq summary > *:first-child{font-size:15px !important}
+
+    /* Footer espace */
+    section:last-of-type{padding-bottom:40px}
+  }
+
+  @media (max-width: 480px){
+    .wrap{padding:0 16px}
+    section{padding:48px 0}
+    .marquee-item{font-size:32px}
+    .stat-num{font-size:36px}
+    .btn{padding:10px 14px;font-size:12px}
   }
 </style>
 </head>
